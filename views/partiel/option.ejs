@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+  
+
+    <!-- <title>Option</title> -->
+    </head>
+    <body>
+<!-- The header of the option -->
+<div class="header">
+    <!-- bar de navigation -->
+    <!-- humberger menu -->
+    <div id="sideBar">
+        <img src="../icon/xmark-solid.svg" id="c_Btn" alt="">
+        <div id="sidebarBtn">
+            <span></span>
+        </div>
+         <!-- les pages en generales -->
+        <ul>
+            <li><a href="options">Option</a></li>
+            <li><a href="inscription">Inscription</a></li>
+            <li><a href="#">Temoignage</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="photo">Gallery > Photo</a></li>
+            <li><a href="video">Gallery > Video</a></li>
+            <li><a href="apropos">Apropos</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+    <nav>
+        <!-- logo de Acam -->
+        <div class="logocontainer">
+            <img class="logo" src="../image/acamLogoCrop.png">
+        </div>
+        
+        
+        <!-- la liste des pages -->
+        <ul>
+            <li class="l1"><a href="/">Accueil</a></li>
+            <li><a href="options">Option</a></li>
+            <li class="l3"><a href="inscription">Inscription</a></li>
+            <li class="l4" id="sublist"><a href="#">Gallery</a>
+                <ul class="sous_list">
+                    <li><a href="/photo">Photo</a></li>
+                    <li><a href="/video">Video</a></li>
+                </ul></li>
+            <li class="l5"><a href="temoignage">Temoignage</a></li>
+            <li class="l6"><a href="apropos">Apropos</a></li>
+            <li class="l7"><a href="#">Blog</a></li>
+            <li class="l8"><a href="contact">Contact</a></li>
+        </ul>
+        </nav>
+        <div style="background-color:black; display:none; height: 100%; position: absolute; width:200px" class="humbergerContent">
+            
+        </div>
+    
+</div>
+
+<!-- The header of the option -->
+<div class="selfOptionContainer">
+    <img src="<%=img%>" alt="Informatique">
+    <h2 style="font-size:20px;"><%=title%></h2>
+    <p style="width:50vw; font-size:20px;"><%=data%></p>
+</div>
+<!-- The footer of the option -->
+ <!-- The footer part -->
+ <div class="footer">
+    <!-- la liste de media sociaux -->
+    <ul class="firstList">
+        <h1>Suivez-nous sur:</h1>
+        <li><a href=""><img src="../icon/square-facebook.svg" alt="facebook icone">Academie des arts et de metiers</a></li>
+        <li><a href=""><img src="../icon/square-instagram.svg" alt="Instagram icone">AcamHaiti_</a></li>
+        <li><a href=""><img src="../icon/square-twitter.svg" alt="Twitter icone">AcamHaiti</a></li>
+        <li><a href=""><img src="../icon/square-youtube.svg" alt="Youtube icone">AcamHaiti</a></li>
+        <li><a href=""><img src="../icon/square-whatsapp.svg" alt="Whatsapp icone">Whatsapp</a></li>
+    </ul>
+    <!-- la liste des pages -->
+    <ul class="pages">
+        <li><a href="">Option</a></li>
+        <li><a href="">Inscription</a></li>
+        <li><a href="">Temoignage</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Apropos</a></li>
+        <li><a href="">Blog</a></li>
+    </ul>
+    <div class="abonnement">
+        <h1>Abonnez pour recevoir nos nouvelles</h1>
+<form action="" method="post"></form>
+<input type="text" name="abonner" placeholder="Entrez votre E-mail">
+<button type="submit">Abonner</button>
+</div>
+
+<!-- <div style="width: 360px; margin:auto;" class="socialMedia">
+<a href=""><img src="icon/square-whatsapp.svg" alt="Whatsapp icone"></a>
+<a href=""><img src="icon/square-facebook.svg" alt="facebook icone"></a>
+<a href=""><img src="icon/square-instagram.svg" alt="Instagram icone"></a>
+<a href=""><img src="icon/square-twitter.svg" alt="Twitter icone"></a>
+<a href=""><img src="icon/square-youtube.svg" alt="Youtube icone"></a>
+</div> -->
+</div>
+
+<script>
+var s_btn = document.getElementById('sidebarBtn');
+var closeBtn = document.getElementById('c_Btn')
+var sidebar =document.getElementById('sideBar');
+ closeBtn.addEventListener("click", function(){
+        sidebar.style.left="-250px";
+        s_btn.style.display="block";
+ });
+
+s_btn.addEventListener("click", function(){
+    sidebar.style.left=0;
+    s_btn.style.display="none";
+});
+</script>
+    </body>
+</html>

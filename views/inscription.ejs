@@ -1,0 +1,66 @@
+
+    <!-- header principal -->
+    <%-include('partiel/header')%>
+    <!-- conteneur principal -->
+    <div class="inscriptionConteneur">
+        <!-- formulaire d'inscription -->
+        <div class="formulaire">
+            <h1>Formulaire D'inscription</h1>
+            <form action="https://formsubmit.co/4acd290dd9c4d4a6b6f626de11e756f7" method="post">
+                <div class="groupAlign">
+                    <div class="firstAlign">
+                        <input type="text" style="display: none;" hidden name="Inscription" value="inscription  (ACAM)">
+                        <input type="text" name="nom" placeholder="Nom" required>
+                        <input type="text" name="prenom" placeholder="Prenom" required>
+                        <input type="text" name="phone" placeholder="Phone" required>
+                        <input type="text" name="email" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="secondAlign">
+                    <!-- liste des options -->
+                        <select name="option" id="option" required>
+                            <option selected>Choisir votre option</option>
+                            <option value="Informatique Bureautique">Informatique Bureautique</option>
+                            <option value="Cosmetologie">Cosmetologie</option>
+                            <option value="Cuisine & Patisserie">Cuisine & Patisserie</option>
+                            <option value="Couture & Haute Couture">Couture & Haute Couture</option>
+                            <option value="Plombrie">Plomberie</option>
+                            <option value="Electricite">Electricite</option>
+                            <option value="Refrigeration & Climatisation">Refrigeration & Climatisation</option>
+                            <option value="Carrelage">Carrelage</option>
+                            <option value="Technique Windows">Technique Windows</option>
+                            <option value="Comptabilite Informatise">Comptabilite Informatise</option>
+                            <option value="Secretariat de Direction">Secretariat de Direction</option>
+                            <option value="Assistance Administrative">Assistance Administrative</option>
+                            <option value="Technique Bancaire">Technique Bancaire</option>
+                            <option value="Technique Douaniere">Technique Douaniere</option>
+                            <option value="Hotellerie & Tourisme">Hotellerie & Tourisme</option>
+                        </select>
+
+                        <!-- niveau d'etude -->
+                        <select name="niveaEtude" id="niveaEtude" required>
+                            <option selected>Selectionner votre Niveau D'etude</option>
+                            <option value="9eme AF">9eme AF </option>
+                            <option value="NS 1 / 3eme Secondaire">NS 1 / 3eme Secondaire</option>
+                            <option value="NS 2 / Seconde">NS 2 / Seconde</option>
+                            <option value="NS 3 / Rheto">NS 3 / Rheto</option>
+                            <option value="NS 4 / Philo">NS 4 / Philo</option>
+                        </select>
+                        <select name="sexe" id="sexe" required>
+                            <option selected>Votre sexe</option>
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="submitBtn">
+                    <button type="submit">Envoyer</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!-- le pied de la page -->
+           <%-include('partiel/footer')%>
+        
+</body>
+</html>

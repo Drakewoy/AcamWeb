@@ -1,0 +1,35 @@
+
+    <!-- conteneur principal -->
+    <div class="contactConteneur">
+        <!-- header principal -->
+       <%-include('partiel/header')%>
+        <!-- la formulaire de contact -->
+        <div class="formContact" >
+            <form  action="https://formsubmit.co/4acd290dd9c4d4a6b6f626de11e756f7" method="post">
+                <input type="text" style="display: none;" hidden name="Contact" value="Contact (ACAM)">
+                <textarea id="message" name="message"  cols="30" rows="10" placeholder="Ecrire un message"></textarea>
+                <input id="email" type="text" name="email" placeholder="Votre Email" required>
+                <input class="phone" type="text" name="phone" placeholder="Votre numero" required>
+                <button type="submit">Envoyer</button>
+            </form>
+            <!-- info additionnel -->
+            <div class="contactAdditionnel">
+                <h1>Contactez-Nous</h1>
+                <a href="">Phone: +509 48 29 84 91</a>
+                <a href="">E-mail: acam.academie@gmail.com</a>
+            </div>
+            <div  class="socialMedia">
+                <a href=""><img src="icon/square-whatsapp.svg" alt="Whatsapp icone"></a>
+                <a href=""><img src="icon/square-facebook.svg" alt="facebook icone"></a>
+                <a href=""><img src="icon/square-instagram.svg" alt="Instagram icone"></a>
+                <a href=""><img src="icon/square-twitter.svg" alt="Twitter icone"></a>
+                <a href=""><img src="icon/square-youtube.svg" alt="Youtube icone"></a>
+            </div>
+        </div>
+
+        <!-- le pied de la page -->
+       <%-include('partiel/footer')%>
+    </div>
+    
+</body>
+</html>

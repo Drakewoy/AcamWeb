@@ -1,0 +1,53 @@
+<div style="width: 100%; padding-top: 3%; padding-bottom: 3%;" class="video-player">
+                    <video style="width: 80%; border-radius: 5%; height: auto; margin:auto; display:block" autoplay id="myVideo">
+                        <source src="VideoWeb/cosmetologie.mp4" type="video/mp4">
+                    </video>
+                    <img src="icon/circle-play-solid.svg"  onclick="play()">play</button>
+                </div>
+                <!-- la partie carrelage -->
+                <div class="carrelage grid ">
+                    <video controls="controls" width="100%" height="auto">
+                        <source src="VideoWeb/Carrelage.mp4">
+                    </video>
+                </div>
+
+
+                <!-- <select name="" id="categoVideoPhone">
+                    <option value="" selected>Categorie</option>
+                    <option  onclick="info()" value="">
+                       <span>Carrelage</span>
+                    </option>
+                    <option onclick="commercial()" value="">
+                     <span>Commercial</span>
+                    </option>
+                    <option  onclick="info()" value="">
+                       <span>Couture & Haute Couture</span>
+                    </option>
+                    <option onclick="info()" value="">
+                        <span>Cosmetologie</span>
+                    </option>
+                    <option onclick="info()" value="">
+                        <span>Cuisine & Patisserie</span>
+                    </option>
+                    <option onclick="info()" value="">
+                       <span>Electricite</span>
+                    </option>
+                    <option onclick="info()" value="">
+              <span>Hotellerie & Tourisme</span>
+                    </option>
+                    <option onclick="info()" value="">
+                        <span>Informatique Burautique</span>
+                    </option>
+                    <option onclick="info()" value="">
+                      <span>Plombrie</span>
+                    </option>
+                    <option onclick="info()" value="">
+                     <span>Refrigeration & Climatisation</span>
+                    </option>
+                    <option onclick="info()" value="">
+                        <span>Technique Windows</span>
+                    </option>
+                    <option onclick="plus()" value="">
+                         <span>Plus de video</span>
+                    </option>
+                </select> -->

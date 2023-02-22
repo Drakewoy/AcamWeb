@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+
+    
+</head>
+<body>
+    <!-- conteneur principal -->
+    <div class="photoConteneur">
+        <!-- header principal -->
+        <%-include('partiel/header')%>
+<!-- groupement de conteneur -->
+        <div class="conteneurGroup">
+
+        <!-- menu a cote -->
+                <div class="asideMenu">
+            <h1>Categorie d'image</h1>
+            <ul>
+            <li><input type="radio" name="chx" value="8" class="r" onclick="info()" ><span>Carrelage</span></li>
+            <li><input type="radio" name="chx" value="11" id="co" onclick="commercial()"><span>Commercial</span></li>
+            <li><input type="radio" name="chx" value="4" class="r" onclick="info()" ><span>Couture & Haute Couture</span></li>
+            <li><input type="radio" name="chx" value="1" class="r" onclick="info()" ><span>Cosmetologie</span></li>
+            <li><input type="radio" name="chx" value="3" class="r" onclick="info()" ><span>Cuisine & Patisserie</span></li>
+            <li><input type="radio" name="chx" value="6" class="r" onclick="info()" ><span>Electricite</span></li>
+            <li><input type="radio" name="chx" value="10" class="r" onclick="info()" ><span>Hotellerie & Tourisme</span></li>
+            <li><input type="radio" name="chx" value="0" class="r" onclick="info()"><span>Informatique Burautique</span></li>
+            <li><input type="radio" name="chx" value="5" class="r" onclick="info()" ><span>Plombrie</span></li>
+            <li><input type="radio" name="chx" value="7" class="r" onclick="info()" ><span>Refrigeration & Climatisation</span></li>
+            <li><input type="radio" name="chx" value="9" class="r" onclick="info()" ><span>Technique Windows</span></li>
+            <li><input type="radio" name="chx" value="12" class="r" onclick="plus()" ><span>Plus d'image</span></li>
+        </ul>
+        </div>
+        <!-- les contenues -->
+        <div class="contenue" id="tag">
+            <div class="imageConteneur">
+                <!-- la partie carrelage -->
+                <div class="carrelage grid">
+                    
+                    <div class="photo">
+                        <img src="Photo Identifiee/Carrelage.png" alt="image de pratique carrelage">
+                    </div>
+                    <div class="photo">
+                        <img src="Photo Identifiee/Carrelage1.png" alt="image de pratique carrelage">
+                    </div>
+                    <div class="photo">
+                        <img src="Photo Identifiee/Carrelage2.png" alt="image de pratique carrelage">
+                    </div>
+                </div>
+                    <!-- fin -->
+                  <!-- la partie commercial -->
+                <div id="commercial" style="display:none;">
+                    <h1>Comptabilite</h1>
+                    <div class="comptabilite grido">
+                        Comptabilite</div>
+                        <h1>Secretariat</h1>
+                    <div class="secretariat grido">
+                        Secretariat</div>
+                        <h1>Assistance</h1>
+                    <div class="assistance grido ">
+                        assistance</div>
+                        <h1>technique Bancaire</h1>
+                    <div class="techBancaire grido">
+                        techBancaire</div>
+                        <h1>technique Douaniere</h1>
+                    <div class="techDou grido">
+                        techDouaniere</div>
+
+                </div>
+                <!-- fin -->
+                 <!-- La partie couture et haute couture -->
+                 <div class="couture grid">
+                    
+
+                    <div class="photo">
+                        <img src="Photo Identifiee/Couture.png" alt="" srcset="">
+                    </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Couture1.png" alt="" srcset="">
+                    </div>
+                
+             
+                </div>
+                <!-- fin -->
+                <!-- la partie cosmetologie -->
+                <div class="cos grid">
+          
+                    <div class="photo">
+                    <img src="Photo Identifiee/Cosmetologie.png" alt="image cosmetologie">
+                    </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Cosmetologie1.png" alt="image cosmetologie">
+            
+                </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Cosmetologie2.png" alt="image cosmetologie">
+            
+            </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Cosmetologie3.png" alt="image cosmetologie">
+            </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Cosmetologie4.png" alt="image cosmetologie">
+            </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Cosmetologie5.png" alt="image cosmetologie">
+            </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Cosmetologie6.png" alt="image cosmetologie">
+            </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Cosmetologie7.png" alt="image cosmetologie">
+            </div>
+                
+            </div>
+            <!-- fin -->
+            <!-- la partie cuisine -->
+ 
+            <div class="cuisine grid">
+               <div class="photo">
+                    <img src="Photo Identifiee/Cuisine.png" alt="Imgage de cuisine" >
+               </div>
+               <div class="photo">
+                    <img src="Photo Identifiee/Cuisine1.png" alt="Imgage de cuisine" >
+               </div>
+               <!-- <div class="photo">
+                    <img src="Photo Identifiee/Cuisine2.png" alt="Imgage de cuisine" >
+               </div> -->
+               <div class="photo">
+                    <img src="Photo Identifiee/Cuisine3.png" alt="Imgage de cuisine" >
+               </div>
+               <div class="photo">
+                    <img src="Photo Identifiee/Cuisine4.png" alt="Imgage de cuisine" >
+               </div>
+            </div>
+                <!-- fin -->
+                <!-- la partie electricite -->
+          
+                <div class="elec grid">
+                    <div class="photo">
+                        <img src="Photo Identifiee/Electricite.png" alt="Image D'electricite">
+                    </div>
+                
+                    <div class="photo">
+                        <img src="Photo Identifiee/Electricite1.png" alt="Image D'electricite">
+                </div>
+                   <!-- <div class="photo">
+                        <img src="Photo Identifiee/Electricite2.png" alt="Image D'electricite">
+                </div> -->
+           
+                </div>
+                <!-- fin -->
+                     <!-- la partie d'Hotellerie -->
+                  
+                     <div class="hotel grid ">
+                        <div class="photo">
+                            <img src="Photo Identifiee/Hotellerie.png" alt="Phto de Pratique Hotellerie et Tourisme">
+                        </div>
+                        <div class="photo">
+                            <img src="Photo Identifiee/Hotellerie1.png" alt="Phto de Pratique Hotellerie et Tourisme">
+                        </div>
+                        <div class="photo">
+                            <img src="Photo Identifiee/Hotellerie2.png" alt="Phto de Pratique Hotellerie et Tourisme">
+                        </div>
+                        <div class="photo">
+                            <img src="Photo Identifiee/Hotellerie3.png" alt="Phto de Pratique Hotellerie et Tourisme">
+                        </div>
+                    </div>
+                        <!-- fin -->
+                <!-- la partie informatique -->
+                <div class="info grid" id="ifo">
+                  
+                    <div class="photo">
+                        <img src="Photo Identifiee/Informatique.png" alt="Photo de pratique informatique">
+                    </div>
+                
+                </div>
+                <!-- fin -->
+                <!-- la partie de plombrie -->
+                <div class="plomberie grid">
+             
+
+                    <div class="photo">
+                    
+                        <img src="Photo Identifiee/Plomberie.png" alt="">
+                    </div>
+                
+                    <div class="photo">
+                
+                        <img src="Photo Identifiee/Plomberie1.png" alt="">
+                
+                </div>
+                
+                </div>
+                <!-- fin -->
+                 <!-- la partie de refrigeration -->
+                 <div class="refri grid ">
+                     
+                    <div class="photo">
+                        <img src="Photo Identifiee/Refrigeration.png" alt="">
+                    </div>
+                    </div>
+                <!-- fin -->
+                <!-- technique windows -->
+                <div class="techWin grid">
+                    
+                    <div class="photo">
+                        
+                       <img src="Photo Identifiee/Technique Windows.png" alt="">
+                    </div>
+                
+                    <div class="photo">
+                    
+                        <img src="Photo Identifiee/Technique Windows1.png" alt="">              
+                </div>
+                
+                </div>
+                <!-- fin -->
+                    </div>
+        </div>
+
+        </div>
+<!-- le pied de la page -->
+      <%-include('partiel/footer')%>
+    </div>
+    <script src="index.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+</body>
+</html>

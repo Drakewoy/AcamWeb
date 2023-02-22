@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+<body>
+
+    <div class="videoConteneur">
+        <!-- header principal -->
+        <%-include('partiel/header')%>
+<!-- groupement de conteneur -->
+        <div class="conteneurGroup">
+            <!-- menu a cote -->
+        
+            <div class="asideMenu" id="aside">
+                <h1>Categorie de video</h1>
+                <li><input type="radio" name="chx" value="8" class="r" onclick="info()" ><span>Carrelage</span></li>
+                <li><input type="radio" name="chx" value="11" id="co" onclick="commercial()"><span>Commercial</span></li>
+                <li><input type="radio" name="chx" value="4" class="r" onclick="info()" ><span>Couture & Haute Couture</span></li>
+                <li><input type="radio" name="chx" value="1" class="r" onclick="info()" ><span>Cosmetologie</span></li>
+                <li><input type="radio" name="chx" value="3" class="r" onclick="info()" ><span>Cuisine & Patisserie</span></li>        
+                <li><input type="radio" name="chx" value="6" class="r" onclick="info()" ><span>Electricite</span></li>
+                <li><input type="radio" name="chx" value="10" class="r" onclick="info()" ><span>Hotellerie & Tourisme</span></li> 
+                <li><input type="radio" name="chx" value="0" class="r" onclick="info()"><span>Informatique Burautique</span></li>      
+                <li><input type="radio" name="chx" value="5" class="r" onclick="info()" ><span>Plombrie</span></li>
+                <li><input type="radio" name="chx" value="7" class="r" onclick="info()" ><span>Refrigeration & Climatisation</span></li>
+                <li><input type="radio" name="chx" value="9" class="r" onclick="info()" ><span>Technique Windows</span></li>
+                <li><input type="radio" name="chx" value="12" class="r" onclick="plus()" ><span>Plus de video</span></li>
+       
+            </div>
+            <div class="imageConteneur">
+                
+                <div id="video-player">
+                    <video style="border-radius: 5%; margin: auto; height: auto;"  id="myVideo">
+                        <source  src="" >
+                    </video>
+                    <img src="icon/circle-play-solid.svg"  id="playBtn" onclick="play()">
+                    <img src="icon/circle-xmark-regular.svg"  id="closeBtn" onclick="closeV()" title="Fermer">
+                </div>
+                <!-- la partie carrelage -->
+                <div class="carrelage grid" onclick="selectVideo('VideoWeb/Carrelage.mp4')" style="cursor: pointer;">
+                    <a href="#video-player">
+                    <video  width="100%" height="auto"  >
+                        <source src="VideoWeb/Carrelage.mp4">
+                    </video>
+                    </a>
+                </div>
+                    <!-- fin -->
+                  <!-- la partie commercial -->
+                <div id="commercial" style="display:none;">
+                    <h1>commercial</h1>
+                    <!-- <div class="comptabilite grido">
+                        <video controls="controls" width="100%" height="auto">
+                            <source src="VideoWeb/Carrelage.mp4">
+                        </video>
+                    </div>
+                    <div class="secretariat grido">
+                        <video controls="controls" width="100%" height="auto">
+                            <source src="VideoWeb/Carrelage.mp4">
+                        </video>
+                    </div>
+                    <div class="assistance grido ">
+                        <video controls="controls" width="100%" height="auto">
+                            <source src="VideoWeb/Carrelage.mp4">
+                        </video>
+                    </div>
+                    <div class="techBancaire grido">
+                        <video controls="controls" width="100%" height="auto">
+                            <source src="VideoWeb/Carrelage.mp4">
+                        </video>
+                    </div>
+                    <div class="techDou grido">
+                        <video controls="controls" width="100%" height="auto">
+                            <source src="VideoWeb/Carrelage.mp4">
+                        </video>
+                    </div> -->
+
+                </div>
+                <!-- fin -->
+                 <!-- La partie couture et haute couture -->
+                 <div class="couture grid ">
+                    <h1>couture</h1>
+
+                    <div class="photo">
+                
+                        <div class="caption">Coutute</div>
+                    </div>
+                
+                    <div class="photo">
+            
+                        <div class="caption">Coutute</div>
+                
+                </div>
+                
+                    <div class="photo">
+        
+                        <div class="caption">Coutute</div>
+                
+                </div>
+                
+                    <div class="photo">
+        
+                        <div class="caption">Coutute</div>
+                
+                </div>
+                
+                    <div class="photo">
+        
+                        <div class="caption">Coutute</div>
+                
+                </div>
+                
+                    <div class="photo">
+        
+                        <div class="caption">Coutute</div>
+                
+                </div>
+                
+                    <div class="photo">
+        
+                        <div class="caption">Coutute</div>
+                
+                </div>
+                
+                    <div class="photo">
+        
+                        <div class="caption">Coutute</div>
+                
+                </div>
+                
+                    <div class="photo">
+        
+                        <div class="caption">Coutute</div>
+                
+                </div>
+                
+                    <div class="photo">
+        
+                        <div class="caption">Coutute</div>
+                </div>
+                </div>
+                <!-- fin -->
+                <!-- la partie cosmetologie -->
+                <div class="cos grid" onclick="selectVideo('VideoWeb/cosmetologie.mp4')" style="cursor: pointer;">
+                    <a href="#video-player">
+                    <video  width="100%" height="auto" >
+                        <source src="VideoWeb/cosmetologie.mp4">
+                    </video>
+                    </a>
+            </div>
+            <!-- fin -->
+            <!-- la partie cuisine -->
+            <div class="cuisine grid" onclick="selectVideo('VideoWeb/Cuisine.mov')" style="cursor: pointer;">
+                <a href="#video-player">
+                <video width="100%" height="auto">
+                    <source src="VideoWeb/Cuisine.mov">
+                </video>
+                </a>
+            </div>
+                <!-- fin -->
+                <!-- la partie electricite -->
+                <div class="elec grid" onclick="selectVideo('VideoWeb/Electricite.mov')" style="cursor: pointer;">
+                    <a href="#video-player">
+                    <video  width="100%" height="auto">
+                        <source src="VideoWeb/Electricite.mov">
+                    </video>
+                    </a>
+                </div>
+                
+                <!-- fin -->
+                     <!-- la partie d'Hotellerie -->
+                     <div class="hotel grid" onclick="selectVideo('VideoWeb/hotellerie.mp4')" style="cursor: pointer;">
+                        <a href="#video-player">
+                        <video  width="100%" height="auto">
+                            <source src="VideoWeb/hotellerie.mp4">
+                        </video>
+                        </a>
+                     </div>
+                        <!-- fin -->
+                <!-- la partie informatique -->
+                <div class="info grid" id="ifo">
+                    <h1>Informatique</h1>
+                    <div class="photo">
+                    
+                        <div class="caption">informatique</div>
+                    </div>
+                
+                    <div class="photo">
+                
+                    <div class="caption">informatique</div>
+                
+                </div>
+                
+                    <div class="photo">
+            
+                <div class="caption">informatique</div>
+                
+                </div>
+                
+                    <div class="photo">
+            
+                <div class="caption">informatique</div>
+                
+                </div>
+                
+                    <div class="photo">
+            
+                <div class="caption">informatique</div>
+                
+                </div>
+                
+                    <div class="photo">
+            
+                <div class="caption">informatique</div>
+                
+                </div>
+                
+                    <div class="photo">
+            
+                <div class="caption">informatique</div>
+                
+                </div>
+                
+                    <div class="photo">
+            
+                <div class="caption">informatique</div>
+                
+                </div>
+                
+                    <div class="photo">
+            
+                <div class="caption">informatique</div>
+                
+                </div>
+                
+                    <div class="photo">
+            
+                <div class="caption">informatique</div>
+                </div>
+                </div>
+                <!-- fin -->
+                <!-- la partie de plombrie -->
+                <div class="plomberie grid" onclick="selectVideo('VideoWeb/plomberie.mp4')" style="cursor: pointer;">
+                    <a href="#video-player">
+                    <video  width="100%" height="auto">
+                        <source src="VideoWeb/plomberie.mp4">
+                    </video>
+                    </a>
+                </div>
+                <!-- fin -->
+                 <!-- la partie de refrigeration -->
+                 <div class="refri grid" onclick="selectVideo('VideoWeb/Refrigeration.mp4')" style="cursor: pointer;">
+                    <a href="#video-player">
+                    <video  width="100%" height="auto">
+                        <source src="VideoWeb/Refrigeration.mp4">
+                    </video>
+                    </a>
+                </div>
+                <!-- fin -->
+                <!-- technique windows -->
+                <div class="techWin grid" onclick="selectVideo('VideoWeb/TechWindows.mp4')" style="cursor: pointer;">
+                    <a href="#video-player">
+                    <video  width="100%" height="auto">
+                        <source src="VideoWeb/TechWindows.mp4">
+                    </video>
+                    </a>
+                </div>
+                <!-- fin -->
+            
+                    </div>
+            </div>
+            <!-- le pied de la page -->
+      <%-include('partiel/footer')%>
+    </div>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>

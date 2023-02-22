@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- le lien du css local -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="favicon" href="favicon.ico">
+    <!-- le lien du javaScript local -->
+    <title>Page d'accueil Acam</title>
+</head>
+<body>
+    <!-- conteneur principal -->
+    <div class="homeConteneur">
+        <!-- header principal -->
+        <div class="header">
+            <div id="sideBar">
+                <img src="icon/xmark-solid.svg" id="c_Btn" alt="">
+                <div id="sidebarBtn">
+                    <span></span>
+                </div>
+                 <!-- les pages en generales -->
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="options">Option</a></li>
+                    <li><a href="inscription">Inscription</a></li>
+                    <li><a href="temoignage">Temoignage</a></li>
+                    <li><a href="apropos">Apropos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="photo">Gallery>Photo</a></li>
+                    <li><a href="video">Gallery>Video</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- bar de navigation -->
+            <nav>
+                  <!-- logo de Acam -->
+                  <div class="logocontainer">
+                    <img class="logo" src="image/acamLogoCrop.png">
+                </div>
+                <!-- humberger menu -->
+              
+        
+                <!-- la liste des pages -->
+                <ul class="lPages">
+                    <li class="l1"><a href="/">Accueil</a></li>
+                    <li class="l2"><a href="options">Option</a></li>
+                    <li class="l3"><a href="inscription">Inscription</a></li>
+                    <li class="l4" id="sublist"><a href="#">Gallery</a>
+                    <ul class="sous_list">
+                        <li><a href="/photo">Photo</a></li>
+                        <li><a href="/video">Video</a></li>
+                    </ul></li>
+                    <li class="l5"><a href="temoignage">Temoignage</a></li>
+                    <li class="l6"><a href="apropos">Apropos</a></li>
+                    <li class="l7"><a href="#">Blog</a></li>
+                    <li class="l8"><a href="contact">Contact</a></li>
+                </ul>
+        
+            </nav>
+          
+            <!-- slideshow -->
+            <div class="carousel-container">
+                    <!-- The trying banner using html and css for designing -->
+                <div style="background-color:#ff0000; padding:0; margin:0;"  class="carousel__item carousel__item--visible">
+                    <!-- <h1 style="display:inline; width:200px;"> The test of the banner using html</h1> -->
+                    <img class="fImg" src="Photo Identifiee/Administration.png" alt="'the administration photo in the banner">
+                    <img class="f2Img"  src="Photo Identifiee/Administration.png" alt="">
+                </div>
+                <!-- The end of it -->
+                <div class="carousel__item ">
+                    <img style="width:100%; height: 100%;" src="Photo Identifiee/BannerCarrelage.png" alt="">
+                </div>
+                <div style class="carousel__item">
+                    <div class="img-ads-show">
+                        <img style="width:100%; height: 100%;" src="Photo Identifiee/BannerAdministration.png" alt="">
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <img style="width:100%; height:100%;" src="Photo Identifiee/bannerCos.png" alt="">
+        
+                </div>
+                <div class="carousel__item">
+                    <img style="width:100%; height:100%;" src="Photo Identifiee/bannerCouture.png" alt="">   
+                </div>
+
+                <div class="carousel__item">
+                    <img style="width:100%; height:100%;" src="Photo Identifiee/BannerCuisine.png" alt="">   
+                </div>
+
+                <div class="carousel__item">
+                    <img style="width:100%; height:100%;" src="Photo Identifiee/BannerHotellerie.png" alt="">   
+                </div>
+
+                <div class="carousel-actions">
+                    <button id="carousel-button-prev" aria-label="previous slide"><
+                    </button>
+                    <button id="carousel-button-next" aria-label="next slide">></button>
+                </div>
+            </div>
+            
+           <!-- video de pub principal -->
+            <div class="pubVideo" id="pubVideo">
+                <img title="fermer la video" id="clAcc" src="icon/circle-xmark-regular copy.svg" alt="">
+                <video id="vidPub" controls muted >
+                    <source src="VideoWeb/cosmetologie.mp4" >
+                </video>
+            </div>
+        </div>
+        <!-- contenu principal -->
+        <div class="content">
+            <!--**************************** previsions des cours *************************** -->
+            <div class="coursSlide" >
+
+                <div  class="carousel-container2">
+                    <div class="carousel__item2 carousel__item--visible2">
+                        <div class="groupingGrid">
+                        <div class="subItem">
+                            <img src="Photo Identifiee/Informatique.png" alt="">
+                            <h1>Informatique</h1>
+                        </div>
+
+                        <div class="subItem">
+                            <img src="Photo Identifiee/Carrelage.png" alt="">
+                            <h1>Carrelage</h1>
+                        </div>
+
+                        <div class="subItem">
+                            <img src="Photo Identifiee/Cosmetologie.png" alt="">
+                            <h1>Cosmetologie</h1>
+                        </div>
+
+                        <div class="subItem">
+                            <img src="Photo Identifiee/Cuisine.png" alt="">
+                            <h1>Cuisine & Patisserie</h1>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div  class="carousel__item2">
+                        <div class="groupingGrid">
+                        <div class="subItem">
+                            <img src="Photo Identifiee/Hotellerie.png" alt="">
+                            <h1>Hotellerie & Tourisme</h1>
+                        </div>
+
+                        <div class="subItem">
+                            <img src="Photo Identifiee/Administration.png" alt="">
+                            <h1>Assistance Administrative</h1>
+                        </div>
+
+                        <div class="subItem">
+                            <img src="Photo Identifiee/Plomberie.png" alt="">
+                            <h1>Plomberie</h1>
+                        </div>
+
+                        <div class="subItem">
+                            <img src="Photo Identifiee/Refrigeration.png" alt="">
+                            <h1>Refrigeration</h1>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel__item2">
+                        <div class="groupingGrid">
+                       <div class="subItem">
+                            <img src="Photo Identifiee/Couture.png" alt="">
+                            <h1>Couture & Haute Couture</h1>
+                       </div>
+
+                       <div class="subItem">
+                        <img src="Photo Identifiee/Electricite.png" alt="">
+                        <h1>Electricite</h1>
+                    </div>
+
+                    <div class="subItem">
+                        <img src="Photo Identifiee/Technique Windows.png" alt="">
+                        <h1>Technique Windows</h1>
+                    </div>
+
+                    <div class="subItem">
+                        <img src="Photo Identifiee/.png" alt="">
+                        <h1>Comptabilite Informatise</h1>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel__item2">
+                        <div class="groupingGrid">
+                        <div class="subItem">
+                            <img src="" alt="">
+                            <h1>Secretariat de Direction</h1>
+                        </div>
+
+                        <div class="subItem">
+                            <img src="" alt="">
+                            <h1>Assistance Administrative</h1>
+                        </div>
+
+                        <div class="subItem">
+                            <img src="" alt="">
+                            <h1>Technique Banquaire</h1>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-actions2">
+                        <button id="carousel-button-prev2" aria-label="previous glise"><
+                        </button>
+                        <button id="carousel-button-next2" aria-label="next glise">></button>
+                    </div>
+                </div>
+
+            </div>
+           
+            <!-- temoignage & commentaire -->
+            <div class="comment"></div>
+
+             <!-- Slideshow Phone -->
+            <!--********************************** previsions des cours*************************** -->
+            <div  class="coursSlidePhone">
+                <div class="carousel-container3">
+                <div class="carousel__item3 carousel__item--visible3">
+                    <div class="subItem3">
+                        <img src="Photo Identifiee/Informatique.png" alt="">
+                        <h1>Informatique</h1>
+                    </div>
+                   
+                    </div>
+              <div class="carousel__item3">
+                <div class="subItem3">
+                    <img src="Photo Identifiee/Carrelage.png" alt="">
+                    <h1>Carrelage</h1>
+                </div>
+                </div>
+                <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="Photo Identifiee/Cosmetologie.png" alt="">
+                        <h1>Cosmetologie</h1>
+                    </div>
+                    </div>
+                    <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="Photo Identifiee/Cuisine.png" alt="">
+                        <h1>Cuisine & Patisserie</h1>
+                    </div>
+                    </div>
+
+                <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="Photo Identifiee/Hotellerie.png" alt="">
+                        <h1>Hotellerie & Tourisme</h1>
+                    </div>
+                </div>
+
+                    <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="Photo Identifiee/Administration.png" alt="">
+                        <h1>Assistance Administrative</h1>
+                    </div>
+                    </div>
+
+                    <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="Photo Identifiee/Plomberie.png" alt="">
+                        <h1>Plomberie</h1>
+                    </div>
+                    </div>
+
+                    <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="Photo Identifiee/Refrigeration.png" alt="">
+                        <h1>Refrigeration</h1>
+                    </div>
+                    </div>
+
+                <div class="carousel__item3">
+                   <div class="subItem3">
+                        <img src="Photo Identifiee/Couture.png" alt="">
+                        <h1>Couture & Haute Couture</h1>
+                   </div>
+                </div>
+
+                   <div class="carousel__item3">
+                   <div class="subItem3">
+                    <img src="Photo Identifiee/Electricite.png" alt="">
+                    <h1>Electricite</h1>
+                </div>
+                </div>
+
+                <div class="carousel__item3">
+                <div class="subItem3">
+                    <img src="Photo Identifiee/Technique Windows.png" alt="">
+                    <h1>Technique Windows</h1>
+                </div>
+                </div>
+
+                <div class="carousel__item3">
+                <div class="subItem3">
+                    <img src="Photo Identifiee/.png" alt="">
+                    <h1>Comptabilite Informatise</h1>
+                </div>
+                </div>
+
+                <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="" alt="">
+                        <h1>Secretariat de Direction</h1>
+                    </div>
+                    </div>
+
+                    <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="" alt="">
+                        <h1>Assistance Administrative</h1>
+                    </div>
+                    </div>
+
+                    <div class="carousel__item3">
+                    <div class="subItem3">
+                        <img src="" alt="">
+                        <h1>Technique Banquaire</h1>
+                    </div>
+                </div>
+
+                <div class="carousel-actions">
+                     <a id="carousel-button-prev3" >
+                     </a>
+                    <a id="carousel-button-next3"></a>
+                </div>
+            </div>
+            </div>
+
+   <!-- Slideshow tablet -->
+            <!--********************************** previsions des cours*************************** -->
+            <div  class="coursSlideTablet">
+                <div class="carousel-container4">
+                <div class="carousel__item4 carousel__item--visible4">
+                    <div class="groupingGrid">
+                    <div class="subItem4">
+                        <img src="Photo Identifiee/Informatique.png" alt="">
+                        <h1>Informatique</h1>
+                    </div>
+                    <div class="subItem4">
+                        <img src="Photo Identifiee/Carrelage.png" alt="">
+                        <h1>Carrelage</h1>
+                    </div>
+                    <div class="subItem4">
+                        <img src="Photo Identifiee/Cosmetologie.png" alt="">
+                        <h1>Cosmetologie</h1>
+                    </div>
+                    <div class="subItem4">
+                        <img src="Photo Identifiee/Cuisine.png" alt="">
+                        <h1>Cuisine & Patisserie</h1>
+                    </div>
+                </div>
+                    </div>
+              <div class="carousel__item4">
+                <div class="groupingGrid">
+                    <div class="subItem4">
+                        <img src="Photo Identifiee/Hotellerie.png" alt="">
+                        <h1>Hotellerie & Tourisme</h1>
+                    </div>
+                    <div class="subItem4">
+                        <img src="Photo Identifiee/Administration.png" alt="">
+                        <h1>Assistance Administrative</h1>
+                    </div>
+                    <div class="subItem4">
+                        <img src="Photo Identifiee/Plomberie.png" alt="">
+                        <h1>Plomberie</h1>
+                    </div>
+                    <div class="subItem4">
+                        <img src="Photo Identifiee/Refrigeration.png" alt="">
+                        <h1>Refrigeration</h1>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel__item4">
+                    <div class="groupingGrid">
+                        <div class="subItem4">
+                            <img src="Photo Identifiee/Couture.png" alt="">
+                            <h1>Couture & Haute Couture</h1>
+                       </div>
+                       <div class="subItem4">
+                        <img src="Photo Identifiee/Electricite.png" alt="">
+                        <h1>Electricite</h1>
+                        </div>
+                         <div class="subItem4">
+                        <img src="Photo Identifiee/Technique Windows.png" alt="">
+                        <h1>Technique Windows</h1>
+                        </div>
+                        <div class="subItem4">
+                        <img src="Photo Identifiee/.png" alt="">
+                        <h1>Comptabilite Informatise</h1>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel__item4">
+                        <div class="groupingGrid">
+                            <div class="subItem4">
+                                <img src="" alt="">
+                                <h1>Secretariat de Direction</h1>
+                            </div>
+                            <div class="subItem4">
+                                <img src="" alt="">
+                                <h1>Assistance Administrative</h1>
+                            </div>
+                            <div class="subItem4">
+                                <img src="" alt="">
+                                <h1>Technique Banquaire</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="carousel-actions4">
+                     <a id="carousel-button-prev4" >
+                     </a>
+                    <a id="carousel-button-next4"></a>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <!-- pied de la page    -->
+        <%- include('partiel/footer')%>
+</div>
+<script src="index.js"></script>
+<script type="text/javascript" src="jquery-3.6.0.js"></script>
+<script>
+       $(document).ready(function(){
+        $('.sidebarBtn').click(function(){
+            $('.sideBar').toggleClass('active');
+        });
+    });
+
+
+</script>
+</body>
+</html>
